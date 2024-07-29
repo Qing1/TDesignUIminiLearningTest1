@@ -1,0 +1,105 @@
+/* pages/example/example.wxss */
+
+
+
+/* 布局测试 */
+.boxPage{
+  min-height: 100vh;
+  background: linear-gradient( 135deg, #b6c1fd, #fff 60%);
+  padding: 30rpx 10rpx;
+  box-sizing: border-box;
+}
+/* 选项行 样式设置 */
+.optionsRowStyle{
+  margin-top: 40rpx;
+}
+
+/* 选项左边内容样式设置 */
+.dark {
+  color: #fff;
+  background: #667eff;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 20rpx 0 0 20rpx;
+}
+/* 下拉菜单 样式设置 */
+.dropdownMenuStyle{
+  height: 60rpx!important;
+  border-radius: 0 20rpx 20rpx 0;
+  border:2rpx solid #667eff;
+  box-sizing: border-box;
+  /* background: chartreuse!important; */
+}
+
+/* 按钮行 样式设置 */
+.btnRowStyle{
+  margin-top: 80rpx;
+  height: 60rpx;
+}
+/* 搜索按钮 样式设置 */
+.searchBtnstyle{
+  color: #667eff!important;
+  border-radius: 20rpx!important;
+  height:60rpx!important;
+  border: 2rpx solid #667eff!important;
+  text-align: center!important;
+  font-size: 30rpx!important;
+}
+
+/* 表格样式设置 */
+
+/* 表头盒子 样式 */
+.tableHeadBoxStyle{
+  margin-top: 80rpx; 
+  height: 70rpx;
+  font-size: 22rpx;
+}
+/* 表头单元格样式设置 */
+.cellBoxStyle {
+  border: 2rpx solid #667eff;
+  border-right: none;
+  text-align: center;
+  line-height: 70rpx;
+  height: 70rpx;
+  background: #667eff;
+}
+.cellBoxStyle0 {
+  border: 2rpx solid #667eff;
+  text-align: center;
+  line-height: 70rpx;
+  height: 70rpx;
+  background: #667eff;
+}
+
+/* 表格内容单元格样式设置 */
+
+/* 表体 行 样式设置 */
+.tableRowStyle{
+  height: 70rpx;
+  font-size: 22rpx;
+}
+
+/* 实际可以 简单点 但这里就不进行修改了 */
+/* 表体 单元格 样式设置 */
+.tableCell{
+  border: 2rpx solid #667eff;
+  border-right: none;
+  text-align: center;
+  line-height: 70rpx;
+  height: 70rpx;
+}
+/* 表体 单元格 样式设置1 */  
+.tableCell1{
+  border: 2rpx solid #667eff;
+  text-align: center;
+  line-height: 70rpx;
+  height: 70rpx;
+}
+
+/* 操作单元格中 链接样式设置 */
+.linkStyle{
+  text-align: center;
+  line-height: 70rpx;
+  height: 70rpx;
+}

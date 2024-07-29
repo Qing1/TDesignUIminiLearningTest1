@@ -1,0 +1,109 @@
+<!--pages/employeeInfo/employeeInfo.wxml-->
+<!-- <text>pages/employeeInfo/employeeInfo.wxml</text> -->
+
+<!-- 员工个人信息页面 -->
+
+<view class="boxContainer {{gender=='男'?'bgGenderStyle1':'bgGenderStyle2'}} " >
+  <!-- 头部信息卡片 -->
+<t-row>
+  <t-col span="22" offset="1" t-class="avatarBoxStyle"  >
+    <!-- 头像框 -->
+    <t-row>
+      <t-col span="7" offset="2"  >
+        <t-avatar class="avatar-example" size="200rpx" image="{{image}}" alt="张二狗"   t-class-alt="{{gender=='男'?'avatarTextStyle1':'avatarTextStyle2'}}" />
+      </t-col>
+    </t-row>
+    <!-- 个人基本信息 :姓名  曾用名-->
+    <t-row >
+      <t-col span="7" offset="2" t-class="itemNameValueStyle"  >张三</t-col>
+      <t-col span="4" offset="1" t-class="itemDesStyle0"  >曾用名</t-col>
+      <t-col span="4" t-class="itemValueStyle0" >张二狗</t-col>
+    </t-row>
+
+    <!-- 个人基本信息：民族 性别 岗位 -->
+    <t-row>
+      <t-col span="3" offset="1" t-class="itemDesStyle">民族</t-col>
+      <t-col span="4"  t-class="itemValueStyle">蒙古族</t-col>
+      <t-col span="3" offset="1" t-class="itemDesStyle" >性别</t-col>
+      <t-col span="4"  t-class="itemValueStyle" >男</t-col>
+      <t-col span="3" offset="1" t-class="itemDesStyle" >职位</t-col>
+      <t-col span="4" t-class="itemValueStyle" >开发</t-col>
+    </t-row>
+
+  </t-col>
+</t-row>
+
+  <!-- 详细信息展示 -->
+  <t-row  >
+    <t-col span="22" offset="1" t-class="employeeInfoBoxStyle">
+
+    <!-- 基本信息 -->
+     <t-row>
+      <t-col  offset="2" t-class="employeeInfoDes0"  >基本信息</t-col>
+      <t-icon name= "info-circle" size="45rpx" class="ss" ></t-icon>
+
+     </t-row>
+      <t-row  style="margin-top: 20rpx;">
+        <t-col offset="1" span="5" t-class="employeeInfoDesStyle"  >所属公司</t-col>
+        <t-col  span="17"  t-class="employeeInfoValueStyle" >人生不满百时光难研究支持15个字</t-col>
+      </t-row>
+    <!-- 年龄 部门 -->
+      <t-row  style="margin-top: 20rpx;">
+        <t-col offset="1" span="5" t-class="employeeInfoDesStyle" >年龄</t-col>
+        <t-col  span="5" t-class="employeeInfoValueStyle">30</t-col>
+        <t-col offset="2" span="5" t-class="employeeInfoDesStyle" >部门</t-col>
+        <t-col  span="5" style="height: 60rpx;line-height: 60rpx;" >研发</t-col>
+      </t-row>
+
+    <!-- 年龄 部门 -->
+    <t-row  style="margin-top: 20rpx;">
+        <t-col offset="1" span="5" t-class="employeeInfoDesStyle" >年龄</t-col>
+        <t-col  span="5" style="height: 60rpx;line-height: 60rpx;" >30</t-col>
+        <t-col offset="2" span="5" t-class="employeeInfoDesStyle" >部门</t-col>
+        <t-col  span="5" style="height: 60rpx;line-height: 60rpx;" >研发</t-col>
+      </t-row>
+
+       <!-- 年龄 部门 -->
+    <t-row  style="margin-top: 20rpx;">
+        <t-col offset="1" span="5" t-class="employeeInfoDesStyle" >年龄</t-col>
+        <t-col  span="5" style="height: 60rpx;line-height: 60rpx;" >30</t-col>
+        <t-col offset="2" span="5" t-class="employeeInfoDesStyle" >部门</t-col>
+        <t-col  span="5" style="height: 60rpx;line-height: 60rpx;" >研发</t-col>
+      </t-row>
+
+       <!-- 年龄 部门 -->
+    <t-row  style="margin-top: 20rpx;">
+        <t-col offset="1" span="5" t-class="employeeInfoDesStyle" >年龄</t-col>
+        <t-col  span="5" t-class="employeeInfoValueStyle" >30</t-col>
+        <t-col offset="2" span="5" t-class="employeeInfoDesStyle" >部门</t-col>
+        <t-col  span="5" t-class="employeeInfoValueStyle" >研发</t-col>
+      </t-row>
+
+       <!-- 年龄 部门 -->
+    <t-row  style="margin-top: 20rpx;">
+        <t-col offset="1" span="5" t-class="employeeInfoDesStyle" >最多4字</t-col>
+        <t-col  span="5" t-class="employeeInfoValueStyle" >支持04字</t-col>
+        <t-col offset="2" span="5" t-class="employeeInfoDesStyle" >支持4字</t-col>
+        <t-col  span="5" t-class="employeeInfoValueStyle" >支持4字</t-col>
+      </t-row>
+
+      
+
+      <!-- 年龄 部门 -->
+      <t-row  style="margin: 20rpx 0;">
+        <t-col offset="1" span="5" t-class="employeeInfoDesStyle" >年龄</t-col>
+        <t-col  span="5" t-class="employeeInfoValueStyle">30</t-col>
+        <t-col offset="2" span="5" t-class="employeeInfoDesStyle" >部门</t-col>
+        <t-col  span="5"t-class="employeeInfoValueStyle" >研发</t-col>
+      </t-row>
+
+
+    </t-col>
+  </t-row>
+
+</view>
+
+
+
+  
+

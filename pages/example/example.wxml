@@ -1,0 +1,125 @@
+<!--pages/example/example.wxml-->
+
+<view class="boxPage">
+  <!-- 第一行 性别 学历 -->
+  <t-row class="optionsRowStyle">
+    <!-- 性别 -->
+    <t-col span="12">
+      <t-row>
+        <t-col span="8" offset="2" class="dark">性别</t-col>
+        <t-col span="12">
+          <t-dropdown-menu arrow-icon="chevron-down" t-class="dropdownMenuStyle">
+            <t-dropdown-item options="{{product.options}}" value="{{product.value}}" bindchange="onChange" />
+          </t-dropdown-menu>
+        </t-col>
+      </t-row>
+
+    </t-col>
+
+    <!-- 学历 -->
+    <t-col span="12">
+      <t-row>
+        <t-col span="8" offset="3" class="dark">学历
+        </t-col>
+        <t-col span="12">
+          <t-dropdown-menu arrow-icon="chevron-down" t-class="dropdownMenuStyle">
+            <t-dropdown-item options="{{education.options}}" value="{{education.value}}" bindchange="onEducation" />
+          </t-dropdown-menu>
+        </t-col>
+      </t-row>
+    </t-col>
+  </t-row>
+  <!-- 第二行 民族 部门 -->
+  <t-row class="optionsRowStyle">
+    <!-- 民族 -->
+    <t-col span="12">
+      <t-row>
+        <t-col span="8" offset="2" class="dark">民族</t-col>
+        <t-col span="12">
+          <t-dropdown-menu arrow-icon="chevron-down" t-class="dropdownMenuStyle">
+            <t-dropdown-item options="{{nation.options}}" value="{{nation.value}}" bindchange="onNation" />
+          </t-dropdown-menu>
+        </t-col>
+      </t-row>
+
+    </t-col>
+
+    <!-- 部门 -->
+    <t-col span="12">
+      <t-row>
+        <t-col span="8" offset="3" class="dark">部门
+        </t-col>
+        <t-col span="12">
+          <t-dropdown-menu arrow-icon="chevron-down" t-class="dropdownMenuStyle">
+            <t-dropdown-item options="{{department.options}}" value="{{department.value}}" bindchange="onDepartment" />
+          </t-dropdown-menu>
+        </t-col>
+      </t-row>
+    </t-col>
+  </t-row>
+
+  <!-- 第三行 年龄职位 -->
+  <t-row class="optionsRowStyle">
+    <!-- 年龄 -->
+    <t-col span="12">
+      <t-row>
+        <t-col span="8" offset="2" class="dark">年龄</t-col>
+        <t-col span="12">
+          <t-dropdown-menu arrow-icon="chevron-down" t-class="dropdownMenuStyle">
+            <t-dropdown-item options="{{age.options}}" value="{{age.value}}" bindchange="onAge" />
+          </t-dropdown-menu>
+        </t-col>
+      </t-row>
+
+    </t-col>
+
+    <!-- 职位 -->
+    <t-col span="12">
+      <t-row>
+        <t-col span="8" offset="3" class="dark">职位
+        </t-col>
+        <t-col span="12">
+          <t-dropdown-menu arrow-icon="chevron-down" t-class="dropdownMenuStyle">
+            <t-dropdown-item options="{{career.options}}" value="{{career.value}}" bindchange="onCareer" />
+          </t-dropdown-menu>
+        </t-col>
+      </t-row>
+    </t-col>
+  </t-row>
+
+  <!-- 第四行  按钮 -->
+  <t-row class="btnRowStyle">
+    <t-col span="6" offset="4">
+      <t-button icon="search" ghost content="搜索" t-class="searchBtnstyle" bindtap="onSearch"></t-button>
+    </t-col>
+    <t-col span="6" offset="4">
+      <t-button icon="rotate" ghost content="重置" t-class="searchBtnstyle" bindtap="onReset"></t-button>
+    </t-col>
+  </t-row>
+
+  <!-- 第五行 表头 -->
+  <t-row class="tableHeadBoxStyle">
+    <t-col span="3" offset="1" class="cellBoxStyle">序号</t-col>
+    <t-col span="3" class="cellBoxStyle">姓名</t-col>
+    <t-col span="3" class="cellBoxStyle">性别</t-col>
+    <t-col span="3" class="cellBoxStyle">部门</t-col>
+    <t-col span="3" class="cellBoxStyle">学历</t-col>
+    <t-col span="4" class="cellBoxStyle">所属公司</t-col>
+    <t-col span="3" class="cellBoxStyle0">操作</t-col>
+  </t-row>
+
+  <!-- 第6行 表体-->
+  <view class="tableBody" wx:for="{{employeeInfo}}" wx:key="index">
+    <t-row class="tableRowStyle">
+      <t-col span="3" offset="1" class="tableCell">{{tableOrderList[index]}}</t-col>
+      <t-col span="3" class="tableCell">{{item.fullName}}</t-col>
+      <t-col span="3" class="tableCell">{{item.gender}}</t-col>
+      <t-col span="3" class="tableCell">{{item.department}}</t-col>
+      <t-col span="3" class="tableCell">{{item.higestEducation}}</t-col>
+      <t-col span="4" class="tableCell">{{item.company}}</t-col>
+      <t-col span="3" class="tableCell1">
+        <t-link size="small" theme="primary" content="详情" navigator-props="{{linkOrderList[index]}}" prefixIcon="link" t-class="linkStyle" hover bindcomplete="onNav"  data-id="{{item.employeeId}}" />
+      </t-col>
+    </t-row>
+  </view>
+</view>
