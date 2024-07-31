@@ -1,0 +1,4 @@
+<!--pages/test/test.wxml-->
+<!-- <text>pages/test/test.wxml</text> -->
+
+<t-tree-select wx:if="{{options}}" options="{{options}}" value="{{value}}" bind:change="onChange" />

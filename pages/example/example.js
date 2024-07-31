@@ -31,6 +31,18 @@ Page({
         {
           value: 'all',
           label: '不限',
+          children: [{
+            value: '01-1',
+            label: '博士',
+          },
+          {
+            value: '02-2',
+            label: '硕士',
+          },
+          {
+            value: '03-3',
+            label: '学士',
+          }]
         },
         {
           value: '01',
@@ -497,7 +509,7 @@ Page({
     tableOrderList: [],
     // 动态生成的链接数组对象
     linkOrderList: [],
-    linkOrderList1: [],
+    linkOrderList1: {},
     // 跳转链接数据 原始不带参数的 当前已经不再使用
     navigatorProps: {
       url: '/pages/employeeInfo/employeeInfo',
@@ -609,8 +621,7 @@ Page({
     };
     console.log('生成的link链接表', linkList)
     this.setData({
-      linkOrderList: linkList,
-
+      linkOrderList: linkList
     })
   },
 
@@ -668,7 +679,7 @@ Page({
     this.setAge();
     // 调用链接列表生成
     this.link();
-    this.link1();
+    // this.link1();
   },
 
 

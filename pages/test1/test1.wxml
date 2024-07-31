@@ -1,0 +1,5 @@
+<!--pages/test1/test1.wxml-->
+<t-dropdown-menu arrow-icon="chevron-down" t-class="dropdownMenuStyle" bindopen="onMenuOpen" bindclose="onMenuClose" >
+  <t-dropdown-item wx:if="false" t-class="dropdownItemStyle" options="{{product.options}}" value="{{product.value}}" bindchange="onChange" />
+</t-dropdown-menu>
+<t-tree-select wx:if="{{visible}}"  options="{{options2}}" value="{{value2}}" bind:change="onChange2" --td-tree-item-font-size="20rpx!important" height="500rpx"  />

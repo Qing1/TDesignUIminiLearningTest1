@@ -1,0 +1,27 @@
+/* pages/login/login.wxss */
+
+.boxContainer0{
+  /* display: flex; */
+  padding: 50rpx 26rpx;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: linear-gradient( 135deg, #b6c1fd, #fff );
+}
+
+
+.inputStyle{
+  height: 60rpx;
+  padding: 0!important;
+  /* border: 2rpx solid red; */
+  border-radius: 20rpx;
+}
+
+.loginBtnStyle{
+  margin-top: 50rpx!important;
+  /* text-align: center; */
+  width: 100%;
+  color: #fff!important;
+  letter-spacing: 10rpx;
+  background: linear-gradient(to right, #667eff, rgb(187, 91, 91))!important;
+  border-radius:30rpx!important ;
+}

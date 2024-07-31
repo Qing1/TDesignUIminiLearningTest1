@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/example/example",
-    "pages/employeeInfo/employeeInfo"
+    "pages/employeeInfo/employeeInfo",
+    "pages/login/login",
+    "pages/test/test",
+    "pages/test1/test1"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -12,7 +15,8 @@
     "t-row": "tdesign-miniprogram/row/row",
     "t-col": "tdesign-miniprogram/col/col",
     "t-button": "tdesign-miniprogram/button/button",
-    "t-icon": "tdesign-miniprogram/icon/icon"
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-image": "tdesign-miniprogram/image/image"
   },
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",

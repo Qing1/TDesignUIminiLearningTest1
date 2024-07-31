@@ -1,6 +1,9 @@
 <!--pages/example/example.wxml-->
 
 <view class="boxPage">
+<!-- 测试 -->
+
+
   <!-- 第一行 性别 学历 -->
   <t-row class="optionsRowStyle">
     <!-- 性别 -->
@@ -118,7 +121,7 @@
       <t-col span="3" class="tableCell">{{item.higestEducation}}</t-col>
       <t-col span="4" class="tableCell">{{item.company}}</t-col>
       <t-col span="3" class="tableCell1">
-        <t-link size="small" theme="primary" content="详情" navigator-props="{{linkOrderList[index]}}" prefixIcon="link" t-class="linkStyle" hover bindcomplete="onNav"  data-id="{{item.employeeId}}" />
+        <t-link wx:if="{{linkOrderList[index]}}" size="small" theme="primary" content="详情" navigator-props="{{linkOrderList[index]}}" prefixIcon="link" t-class="linkStyle" hover bindcomplete="onNav" data-id="{{item.employeeId}}" />
       </t-col>
     </t-row>
   </view>

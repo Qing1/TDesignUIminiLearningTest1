@@ -1,0 +1,21 @@
+/* pages/test1/test1.wxss */
+/* WXSS */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dropdownMenuStyle{
+  width: 300rpx;
+  background: #667eff!important;
+  
+  border: 4rpx solid #667eff;
+  border-radius: 0 20rpx 20rpx 0;
+  margin-left: 40rpx;
+}
+.dropdownItemStyle{
+  width: 0rpx!important;
+  /* background: red; */
+}
+
